@@ -10,7 +10,7 @@ import UIKit
 
 class FinderListViewController: EDHFinderListViewController {
 
-    var bannerView: GADBannerView!
+//rm-ADS    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class FinderListViewController: EDHFinderListViewController {
     // MARK: - Utilities
     
     func initAd() {
+        /* rm-ADS
         if UIDevice.currentDevice().orientation.isLandscape {
             self.bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerLandscape)
         } else {
@@ -49,6 +50,7 @@ class FinderListViewController: EDHFinderListViewController {
         self.bannerView.loadRequest(request)
         
         self.tableView.tableFooterView = self.bannerView
+*/
     }
 
 }
